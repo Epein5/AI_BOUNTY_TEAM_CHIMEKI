@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Input</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            background-color: grey;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            /* background-color: #007bff; */
+            background-color:black;
+
+            color: #fff;
+            padding: 10px;
+            /* padding: 10px; */
+            text-align: center;
+            margin: 0;
+            margin-bottom: 10px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            gap: 25px; /* Add gap between flex items */
+            max-width: 1450px;
+            margin: 20px auto;
+        }
+
+        form {
+            width: 300px; /* Adjust width as needed */
+            /* background-color: #fff; */
+            background-color:grey;
+            padding: 20px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-height: 300px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 75%;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: rgb(180, 176, 176);
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="submit"] {
+            /* background-color: #007bff; */
+            background-color:black;
+            color: #fff;
+
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .event-list,
+        .Your-events {
+            flex: 1;
+            width: 600px; /* Adjust width as needed */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .event-list h2,
+        .Your-events h2 {
+            /* background-color: #007bff; */
+            background-color:black;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin: 0;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Add an Event</h1> -->
+    <div class="container">
+        <form method="POST" action="/submit">
+            <h1>Add an Event</h1>
+            <label for="event">Event:</label>
+            <input type="text" id="event" name="event" required><br><br>
+            <label for="date">Date :</label>
+            <input type="text" id="date" name="date" placeholder="E.g: 14 January" required><br><br>
+            <input type="submit" value="Save Event">
+        </form>
+        <div class="event-list">
+            <h2>Event List</h2>
+            <ul>
+                {% for event, date in events.items() %}
+                <li>{{ event }}: {{ date }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="Your-events">
+            <h2>Your Events</h2>
+            {% for event, date in your_events.items() %}
+            <li>{{ event }}: {{ date }}</li>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
