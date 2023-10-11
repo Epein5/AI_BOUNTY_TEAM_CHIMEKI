@@ -1,7 +1,8 @@
 import openai
 from googletrans import Translator
 
-openai.api_key = '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'
+
+openai.api_key = 'afssfiqwfwefebgsg39wehger9grghw0wefwe-sgdffbgdfbd ' # enter your own API key here from openai
 
 def prompttext(prompt_texxt):
     prompt_text = f'Just Give me one paragraph of 25 words of {prompt_texxt}  to post on social media . (should contain #s ONLY at the end with some emojis.).Just the content that i can copy and paste'
