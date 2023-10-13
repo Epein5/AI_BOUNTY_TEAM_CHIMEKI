@@ -32,7 +32,7 @@ Before running the bot, ensure you have the following installed/configured:
    ```bash
    cd ai-bounty-challenge
 
-2. **Create a new directory:**
+3. **Inside Flutter Terminal:**
    ```bash
    flutter pub get
    flutter run
