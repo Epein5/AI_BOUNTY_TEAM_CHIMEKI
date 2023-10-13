@@ -7,7 +7,7 @@ Welcome to our AI BOUNTY CHALLENGE project - **Content Creator Bot**! This proje
 ## Features
 
 - **Web Scraping:** The bot dynamically scrapes images from a specified website.
-- **Machine Translation:** Utilizes Google Translate API to translate scraped content to Nepali.
+- **Machine Translation:** Utilizes OpenAI API to generate content and then translates scraped content to Nepali using Google Translate package.
 - **Image Processing:** Combines translated text with images to create image-based content.
 - **Instagram Clone:** Includes a Flutter-based Instagram clone for deploying and sharing the created content.
 
