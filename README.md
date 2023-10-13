@@ -21,18 +21,23 @@ Before running the bot, ensure you have the following installed/configured:
 
 ## Setup Instructions
 
-1. **Clone the Repository:**
+1. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+
+
+2. **Clone the Repository:**
    ```bash
    git clone https://github.com/your-username/ai-bounty-challenge.git
    cd ai-bounty-challenge
    flutter pub get
    flutter run
 
-2. **Create a new directory:**
+3. **Create a new directory:**
    ```bash
    cd ai-bounty-challenge
 
-3. **Inside Flutter Terminal:**
+4. **Inside Flutter Terminal:**
    ```bash
    flutter pub get
    flutter run
