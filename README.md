@@ -16,7 +16,7 @@ Welcome to our AI BOUNTY CHALLENGE project - **Content Creator Bot**! This proje
 Before running the bot, ensure you have the following installed/configured:
 
 - Python 3.x
-- Google Translate API Key
+- OpenAI API Key
 - Flutter SDK for mobile app deployment
 
 ## Setup Instructions
@@ -25,3 +25,5 @@ Before running the bot, ensure you have the following installed/configured:
    ```bash
    git clone https://github.com/your-username/ai-bounty-challenge.git
    cd ai-bounty-challenge
+   flutter pub get
+   flutter run
