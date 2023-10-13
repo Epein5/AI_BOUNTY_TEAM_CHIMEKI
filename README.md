@@ -36,7 +36,3 @@ Before running the bot, ensure you have the following installed/configured:
    ```bash
    flutter pub get
    flutter run
-
-   
-
-   
