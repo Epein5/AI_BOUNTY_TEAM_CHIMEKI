@@ -1,6 +1,6 @@
 # AI BOUNTY CHALLENGE: Content Creator Bot
 
-Welcome to our AI BOUNTY CHALLENGE project - **Content Creator Bot**! This project combines web scraping, machine translation, and image processing to dynamically generate images with Nepali text. The bot scrapes images from a specified website, generates and translates the content to Nepali using OpenAI API, and then combines the image and translated text to create visually appealing content.
+Welcome to our AI BOUNTY CHALLENGE project - **छिमेकी: तपाईंको सामाजिक संवादक**! This project combines web scraping, machine translation, and image processing to dynamically generate images with Nepali text. The bot scrapes images from a specified website, generates and translates the content to Nepali using OpenAI API, and then combines the image and translated text to create visually appealing content.
 
 <div align="center">
     <div style="display: inline-block; text-align: center;">
