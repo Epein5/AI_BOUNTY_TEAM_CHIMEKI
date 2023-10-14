@@ -11,11 +11,14 @@ Welcome to our AI BOUNTY CHALLENGE project - **छिमेकी: तपाई�
     <div style="display: inline-block; text-align: center;">
         <img src="https://github.com/zeus0911/AI_BOUNTY_TEAM_CHIMEKI/assets/112919863/cb5fca6e-2b0e-4a47-9095-e2d41989a74d" width="300" alt="Content Captioned Image">
         <br>
-        <strong>Content Captioned Image Caption</strong>
+        <strong>Content Captioned Image</strong>
     </div>
-</div>
 
-  
+<div style="display: inline-block; text-align: center;">
+        <img src="https://github.com/zeus0911/AI_BOUNTY_TEAM_CHIMEKI/assets/112919863/de478e0d-03bc-4e94-962d-67f9705d3fa7" width="300" alt="Content Captioned Image">
+        <br>
+        <strong>Content Captioned Image</strong>
+    </div>
 </div>
 
 ## Features
