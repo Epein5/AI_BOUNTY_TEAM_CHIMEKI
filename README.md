@@ -46,25 +46,46 @@ Before running the bot, ensure you have the following installed/configured:
 
 ## Setup Instructions
 
-
-
 1. *Clone the Repository:*
    ```bash
    git clone https://github.com/your-username/ai-bounty-challenge.git
-   cd ai-bounty-challenge
-   flutter pub get
-   flutter run
-
-2. *Create a new directory:*
-   ```bash
-   cd ai-bounty-challenge
-
-3. *Install Dependencies:*
-   ```bash
-   pip install -r requirements.txt
 
 
-4. *Inside Flutter Terminal:*
-   ```bash
-   flutter pub get
-   flutter run
+2. *Create a new virtual enviroment and install Dependencies*
+    - Create a virtual enviroment(recommended)
+        ```bash
+        python -m venv venv
+        source venv/bin/activate  # On Windows, use 'venv\Scripts\activate'
+    - Install the required dependencies from requirements.txt:
+        ```bash
+        Install the required dependencies from requirements.txt:
+    Note: You may need to install dependencies one by one due to version conflicts.
+
+
+ 3. *Set up Web_and_Hosting dir*
+    - Create a JSON file named config.json in the "Web_and_Hosting" directory.
+    - Add your OpenAPI key as a dictionary with the key named "api_key" in config.json.
+    - In app.py, on line 58, specify the path to your root directory.
+    - Delete all files within the "FinalImage," "OutputImage," and "POST" directories in "Web_and_Hosting/DB/".
+
+4. *Set up your flutetr application*
+    - Navigate to the root directory of your Flutter application:
+       ```bash
+       cd path/to/your/flutter/app
+    - Fetch Flutter project dependencies:
+        ```bash
+        flutter pub get
+    - Run your flutter application
+      ```bash
+       flutter run
+    
+5. *Run the project*
+    - Return to the "Web_and_Hosting" directory:
+       ```bash
+       cd path/to/ai-bounty-challenge/Web_and_Hosting
+    - Start the Python server for your project:
+        ```bash
+        python app.py
+   
+
+Now you should be able to see your changes reflected in your Flutter application.
