@@ -22,7 +22,7 @@ Welcome to our AI BOUNTY CHALLENGE project - **Content Creator Bot**! This proje
 
 - **Web Scraping:** The bot dynamically scrapes images from a specified website.
 - **Machine Translation:** Utilizes OpenAI API to generate content and then translates scraped content to Nepali.
-- **Image Processing:** Combines translated text with images to create image-based content.e
+- **Image Processing:** Combines translated text with images to create image-based content.
 - **Instagram Clone:** Includes a Flutter-based Instagram clone for deploying and sharing the created content.
 
 ## Prerequisites
@@ -30,6 +30,7 @@ Welcome to our AI BOUNTY CHALLENGE project - **Content Creator Bot**! This proje
 Before running the bot, ensure you have the following installed/configured:
 
 - Python 3.x
+- Flutter 3.x
 - OpenAI API Key
 - Flutter SDK for mobile app deployment
 
